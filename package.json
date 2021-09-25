@@ -1,0 +1,30 @@
+{
+  "name": "kopitech-logger",
+  "version": "1.0.0",
+  "description": "Kopitech Logger Library",
+  "main": "dist/index.js",
+  "files": [
+    "/dist",
+    "/README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && cp -r src/ dist/",
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\" --require esm",
+    "upload": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "log4js": "^6.3.0"
+  },
+  "keywords": [
+    "kopitech",
+    "log",
+    "logger"
+  ],
+  "author": "Yee Hui Poh <yhpoh91@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yhpoh91/kopitech-logger"
+  }
+}
