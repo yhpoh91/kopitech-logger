@@ -28,6 +28,17 @@ const logConfig = {
 };
 
 const buildLog = (logger) => {
+  if (!logEnabled) {
+    return {
+      L: {
+        debug: () => {},
+        info: () => {},
+        warn: () => {},
+        error: () => {},
+      },
+    };
+  }
+
   configure(logConfig);
   return {
     L: getLogger(logger),

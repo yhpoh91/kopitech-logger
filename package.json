@@ -1,6 +1,6 @@
 {
   "name": "kopitech-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kopitech Logger Library",
   "main": "dist/index.js",
   "files": [
